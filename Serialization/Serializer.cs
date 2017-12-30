@@ -24,7 +24,7 @@ namespace Serialization
 
             xmlFile.Descendants("Owner")
                 .Select(
-                    m => new Owner(m.Element("FirstName").Value, m.Element("LastName").Value))
+                    m => new Owner(m.Element("FirstName").Value, m.Element("Surname").Value))
                 .Where(m => m.LastName == "Modżajto")
                 .ToList()
                 .ForEach(m => { Console.WriteLine("Owner: {0} {1} ", m.FirstName, m.LastName); });
