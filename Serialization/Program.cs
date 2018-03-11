@@ -28,7 +28,7 @@ namespace Serialization
             Console.WriteLine("Serialized. Press key to read the file");
             Console.ReadKey();
 
-            Serializer.XmlReader("serializedCarOwners.xml");
+            Serializer.ReadSerializedFile("serializedCarOwners.xml");
             Console.WriteLine("Done.");
             Console.ReadKey();
         }

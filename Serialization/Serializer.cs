@@ -18,7 +18,7 @@ namespace Serialization
             }
         }
 
-        public static void XmlReader(string @fileName)
+        public static void ReadSerializedFile(string @fileName)
         {
             var xmlFile = XDocument.Load(fileName);
 
